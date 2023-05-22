@@ -8,8 +8,10 @@ function remainingFilenameLength(inputPath) {
     // windows file length limit is 255
     // windows full path length limit is 260
 
-    // mac file length limit is 255
-    // mac full path length limit is 1024
+    // mac offical file length limit is 255
+    // mac offical full path length limit is 1024
+    // mac actual full path length limit is 767 (nodejs)
+    // mac actual full path length limit is 1023 (finder)
 
     const dirPath = path.dirname(inputPath);
 
@@ -20,12 +22,16 @@ function remainingFilenameLength(inputPath) {
 
     if (os.platform() === 'darwin') {
         maxLength = 1024;
+
+        // mac actual file length limit is 767
+        maxFilenameLength = 767;
     }
 
     // 計算剩餘可用檔名字元長度
     const remainingLength = maxLength - dirPath.length;
     
-    return Math.min(remainingLength, maxFilenameLength);
+    return remainingLength;
+    // return Math.min(remainingLength, maxFilenameLength);
 }
 
 module.exports = remainingFilenameLength;
