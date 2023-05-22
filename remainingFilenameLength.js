@@ -15,9 +15,15 @@ function remainingFilenameLength(inputPath) {
 
     const dirPath = path.dirname(inputPath);
 
+    console.log(dirPath.length)
+
     // 根據作業系統設定最大路徑長度限制
     if (os.platform() === 'win32') {
-        maxLength = 260;
+        // windows full path length limit is 260
+        // null character is 1
+        // 8.3 filename is 12
+        // http://demon.tw/programming/max_path-or-max_path-1.html
+        maxLength = 260 - 1 - 12;
     }
 
     if (os.platform() === 'darwin') {
