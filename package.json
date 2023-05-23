@@ -13,9 +13,11 @@
     "url": "git+https://github.com/pickuse2013/remainingFilenameLength.git"
   },
   "keywords": [
-    "max_path",
-    "max path",
-    "max file name length"
+    "MAX_PATH",
+    "electron",
+    "max path name length",
+    "max file name length",
+    "max file name length remaining"
   ],
   "bugs": {
     "url": "https://github.com/pickuse2013/remainingFilenameLength/issues"
