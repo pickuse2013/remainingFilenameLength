@@ -1,0 +1,24 @@
+{
+  "name": "remainingfilenamelength",
+  "version": "1.0.0",
+  "description": "`remainingFilenameLength` is a program that calculates the maximum allowable filename length based on the maximum path length of the current operating system. You can provide a path to the program, and it will calculate the maximum filename length that you can use. The program currently supports Windows and MacOS and has been tested extensively.",
+  "main": "remainingFilenameLength.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pickuse",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pickuse2013/remainingFilenameLength.git"
+  },
+  "keywords": [
+    "max_path",
+    "max path",
+    "max file name length"
+  ],
+  "bugs": {
+    "url": "https://github.com/pickuse2013/remainingFilenameLength/issues"
+  },
+  "homepage": "https://github.com/pickuse2013/remainingFilenameLength#readme"
+}
